@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+img {
+border-radius: 50%;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto;
+gap: 20px;
+background-color: #15d2e8;
+padding: 120px;
+}
+
+.grid-container > div {
+background-color: #14e2fa;
+border: 2px solid black;
+text-align: center;
+font-size: 20px;
+}
+.row {
+display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+flex: 25%;
+padding: 5px;
+}
+/* Style the header */
+.header {
+background-color: #333;
+padding: 20px;
+text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #white;
+color: black;
+}
+
+/* Style the footer */
+.footer {
+background-color: #15d2e8;
+padding: 10px;
+text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 100px) {
+.column.side, .column.middle {
+width: 80%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="index.html">Title Page</a>
+<a href="About_us.html">About Us</a>
+<a href="Article.html">Article</a>
+<li style="float:right"><a class="active" href="sign_in.html">Sign In</a></li>
+</div>
+
+<div class="grid-container">
+
+<div class="grid-item"><h1><h1 style="font-family:Lucida Handwriting;">Venture Vista</h1>
+<p><p style="font-family:Papyrus;">Mission: To inspire and connect travelers, showcasing the beauty and diversity of destinations worldwide, while promoting sustainable and responsible tourism practices.<p>
+
+<p><p style="font-family:Papyrus;">Vision: To be the go-to platform for travelers seeking authentic experiences, providing comprehensive information, expert recommendations, and a vibrant community that fosters a love for exploration and cultural exchange.</p>
+</div>
+<div class="grid-item">
+<div class="row">
+<div class="column">
+<img src="https://scontent.fcrk2-2.fna.fbcdn.net/v/t31.18172-8/29983488_1599604130152180_4148140689757865193_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFI26t195XLud5O-ex3vSC55ovD9QKck4zmi8P1ApyTjBoQ3hV-WmSvXO7nPPh1JxBJSXevYx9YZLhhggcTRu5o&_nc_ohc=7XsU2nD2EGUAX8kLrX7&_nc_ht=scontent.fcrk2-2.fna&oh=00_AfAsdppWTbFudU6KYqoT9nmrZZNL0WvJH2pqz7ILZiu7gA&oe=653F3556" alt="" style="width:50%">
+<p><p style="font-family:Papyrus;">Kirsten Joy Lazaro</p>
+</div>
+
+<div class="column">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/382868521_637312215241858_3695579406892880942_n.jpg?stp=dst-jpg_p160x160&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeENXRGfbQ001oNRRCldTCAJoLesJcPz-Xugt6wlw_P5ey0l26tOZEqVbyZ3Q1V1SZKMdLVPlK_DAt0akDGAPH8_&_nc_ohc=SoI9O-KgKtEAX9RVKZR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRAnT1S_-ncjlNwg7OwllRKtAqLR5S40givtZ9eTk5ulQ&oe=653F4516" alt="" style="width:40%">
+<p><p style="font-family:Papyrus;">Gian Balucanag</p>
+</div>
+
+<div class="column">
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/382904548_835953601526253_5079611771446390756_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeEb2fgkvZ4XUn9_0dIQfgiwVb3UbLfQgftVvdRst9CB-9Ht5UO1z4r517rh8QDz1jPOhjSSFPYNueIIV1fq-p5B&_nc_ohc=L3ZDIvJgpuEAX-kCz3D&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTowiuPajhd5cOe7TM-f_7AMjnt_CiYxvTnw0FbTj_EjA&oe=653F3003" alt="" style="width:50%">
+<p><p style="font-family:Papyrus;">Louis Udan</p>
+</div>
+
+<div class="column">
+<img src="https://scontent.fcrk2-1.fna.fbcdn.net/v/t1.15752-9/382920191_823536075907248_5624206689801894097_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeEQxDhryr2RZQqYV_dNlIRa2F8K_gmfR27YXwr-CZ9HbtAeMEcZz-COJuNR9kgeHBrQC54PefKqTFAwhn6dCWDw&_nc_ohc=z2Q4X-KlfTkAX-XWzSs&_nc_ht=scontent.fcrk2-1.fna&oh=03_AdRpnSc-UfzjILNC3j5eGWMQusjr43qjJsYZcFLM5FV3zA&oe=653F39C5" alt="" style="width:40%">
+<p><p style="font-family:Papyrus;">Glenn Abragon</p>
+</div>
+
+</div>
+<p><p style="font-family:Papyrus;">Designers</p>
+</div>
+</div>
+<div class="footer">
+<p>@Venture Vista</p>
+</div>
+
+</body>
+</html>

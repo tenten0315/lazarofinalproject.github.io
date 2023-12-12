@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2px;
+  background-color: #4ce6ca;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+{
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px #4ce6ca;
+  padding: 10px;
+}
+
+/* Style the header */
+.header {
+background-color: #0bc5de;
+padding: 20px;
+text-align: center;
+}
+
+/* Style the footer */
+.footer {
+background-color: #0bc5de;
+padding: 15px;
+text-align: center;
+}
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #white;
+color: black;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+.column {
+width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="index.html">Title Page</a>
+<a href="About_Us.html">About Us</a>
+<a href="Article.html">Article</a>
+<li style="float:right"><a class="active" href="sign_in.html">Sign In</a></li>
+</div>
+
+<div class="header">
+<h1><h1 style="font-family:Papyrus;">Discover the Enchanting Splendor:</h1>
+<p>Unveiling the Charms of Baguio City</p>
+</div>
+
+<div class="grid-container">
+  <div class="grid-item"><h2><h2 style="font-family:Lucida Handwriting;">Botanical Garden</h2><p><img src="https://2.bp.blogspot.com/-aLNrfcCKA5Y/VLCN07Bp_BI/AAAAAAAAArg/XzHCw9Yhjk4/s1600/botanicalgarden01.jpg" alt="Past" style="width:450px;height:300px;"></p></div>
+  
+   <div class="grid-item"><h2 style="font-family:Lucida Handwriting;">Burnham Park</h2><p><img src="https://newsinfo.inquirer.net/files/2023/04/462818.jpeg" alt="Present" style="width:450px;height:300px;"></p></div>
+  
+   <div class="grid-item"><h2 style="font-family:Lucida Handwriting;">Wright Park</h2><p><img src="https://jannispaghettiisawanderlust.files.wordpress.com/2016/01/1932059_10204996526463810_635337376_n.jpg" alt="Future" style="width:450px;height:300px;"></p></div>
+
+</div>
+
+<div class="footer">
+  <p>@Venture Vista</p>
+</div>
+  
+
+</body>
+</html>

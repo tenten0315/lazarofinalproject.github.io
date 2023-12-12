@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  background-color: #15d2e8;
+  padding: 25px;
+}	
+  
+.grid-container > div {
+  background-color: #14e2fa;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+}
+/* Style the header */
+.header {
+background-color: #333;
+padding: 20px;
+text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #white;
+color: black;
+}
+
+/* Style the footer */
+.footer {
+background-color: #15d2e8;
+padding: 1px;
+text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 100px) {
+.column.side, .column.middle {
+width: 80%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="index.html">Title Page</a>
+<a href="About_Us.html">About Us</a>
+<a href="Article.html">Article</a>
+<li style="float:right"><a class="active" href="sign_in.html">Sign In</a></li>
+</div>
+
+<div class="grid-container">
+	<div class="grid-container">
+	
+
+	<div class="grid-item"><h1><h1 style="font-family:Lucida Handwriting;"> Baguio City</h1>
+		<p><p style="font-family:Papyrus;">Baguio City, also known as the "Summer Capital of the Philippines," is a charming and picturesque destination located in the mountainous region of Benguet. It offers a cool and refreshing climate, beautiful landscapes, and a rich cultural heritage.</p>
+		<p><p style="font-family:Papyrus;">One of the most iconic landmarks in Baguio is The Mansion, the official summer residence of the President of the Philippines. Surrounded by lush gardens, it is a must-visit spot for history enthusiasts and those seeking Instagram-worthy photo opportunities.</p>
+		<p><p style="font-family:Papyrus;">Another popular attraction is Burnham Park, a sprawling urban park named after American architect Daniel Burnham. Here, you can enjoy boating in the man-made lake, go biking, have a picnic, or simply take a leisurely stroll amidst the vibrant flowers and towering pine trees.</p>
+		<p><p style="font-family:Papyrus;">Baguio is also famous for its strawberries, and you can experience the joy of picking your own fresh strawberries at the Strawberry Farm in La Trinidad, just a short drive away from the city center. Don't forget to try the delicious strawberry taho and strawberry ice cream, which are local favorites!</p>
+		<p><p style="font-family:Papyrus;">Whether you're an adventure seeker, nature lover, or simply looking for a peaceful getaway, Baguio City has something to offer everyone. Its cool climate, breathtaking scenery, and warm hospitality make it a perfect destination to rejuvenate and create lasting memories.<p></div>
+	
+	<div class="grid-item"><p><img src="https://cdn-agkod.nitrocdn.com/HHTsYSGsDyZLTePzRyQWYMiOFmYfcDWX/assets/images/optimized/rev-64ddbf7/expertworldtravel.com/wp-content/uploads/2022/04/wright-park.jpg" alt="" style="width:300px;height:600px;"></p></div>
+	</div>
+	
+<div class="grid-item"><p><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/watch-shop-poster-design-template-514e918f1f8476a291408c3b93ae76c3_screen.jpg?ts=1636989612" alt="Past" style="width:300px;height:800px;"></p></div>
+</div>
+
+<div class="footer">
+  <p>@Venture Vista</p>
+</div>
+  
+
+</body>
+</html>
